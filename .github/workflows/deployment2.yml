@@ -11,7 +11,7 @@ jobs:
         run: npm ci
 
       - name: Lint
-        run: npm run Lint
+        run: npm run lint
 
   test:
     needs: lint
@@ -37,7 +37,7 @@ jobs:
         run: npm ci
       
       - name: Build code
-        run: npm run Build
+        run: npm run build
 
       - name: Deploy
         run: echo "Deploying..."
